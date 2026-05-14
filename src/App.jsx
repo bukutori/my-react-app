@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './Card';
 import TodoList from './TodoList';
-
+import WeatherComponent from './WeatherComponent';
 
 function App() {
   // 1. 個人資料定義
@@ -9,7 +9,7 @@ function App() {
     name: "蔡維馨",
     title: "你好",
     avatar: "https://www.keaitupian.cn/cjpic/frombd/0/253/28190850/1664220321.jpg",
-    bio: "喜歡做意義不明的事",
+    bio: "",
     skills: ["畫畫", "睡覺", "發呆", "做意義不明的事"],
     email: "5b2g0007@stust.edu.tw"
   };
@@ -61,6 +61,11 @@ function App() {
       <h1 style={{ textAlign: 'center' }}>待辦事項</h1>
       <div style={containerStyle}>
         <TodoList />
+      </div>
+      
+      <h1 style={{ textAlign: 'center' }}>城市天氣查詢</h1>
+      <div style={containerStyle}>
+        <WeatherComponent />
       </div>
     </div>
   );
